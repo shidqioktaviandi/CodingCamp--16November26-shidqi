@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Life Dashboard</title>
+</head>
+<body>
+
+  <header>
+    <button id="theme-toggle" aria-label="Switch to dark mode">&#9788;</button>
+  </header>
+
+  <main>
+
+  <!-- Greeting Widget -->
+  <section id="greeting-widget">
+    <h2>Welcome</h2>
+    <div id="clock-display"></div>
+    <div id="date-display"></div>
+    <div id="greeting-display"></div>
+    <form id="name-form" autocomplete="off">
+      <input id="name-input" type="text" placeholder="Enter your name" aria-label="Your name">
+      <button id="name-save-btn" type="button">Save</button>
+      <span id="name-error" role="alert" aria-live="polite"></span>
+    </form>
+  </section>
+
+  <!-- Focus Timer Widget -->
+  <section id="timer-widget">
+    <h2>Focus Timer</h2>
+    <div id="timer-display">25:00</div>
+    <div id="timer-controls">
+      <button id="timer-start" aria-label="Start timer">Start</button>
+      <button id="timer-stop" aria-label="Stop timer">Stop</button>
+      <button id="timer-reset" aria-label="Reset timer">Reset</button>
+    </div>
+    <div id="timer-settings">
+      <div id="work-setting">
+        <label for="work-input">Work (min)</label>
+        <input id="work-input" type="number" min="1" max="60" aria-label="Work session duration in minutes">
+        <button id="work-save" type="button" aria-label="Save work duration">Save</button>
+        <span id="work-error" role="alert" aria-live="polite"></span>
+      </div>
+      <div id="break-setting">
+        <label for="break-input">Break (min)</label>
+        <input id="break-input" type="number" min="1" max="30" aria-label="Break session duration in minutes">
+        <button id="break-save" type="button" aria-label="Save break duration">Save</button>
+        <span id="break-error" role="alert" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- To-Do List Widget -->
+  <section id="todo-widget">
+    <h2>To-Do List</h2>
+    <div id="todo-input-row">
+      <input id="todo-input" type="text" placeholder="Add a task…" aria-label="New task label">
+      <button id="todo-add-btn" type="button" aria-label="Add task">Add</button>
+    </div>
+    <span id="todo-error" role="alert" aria-live="polite"></span>
+    <div id="todo-sort-row">
+      <label for="todo-sort">Sort by</label>
+      <select id="todo-sort" aria-label="Sort tasks">
+        <option value="creation">Creation order</option>
+        <option value="alpha">Alphabetical</option>
+        <option value="done-last">Completed last</option>
+      </select>
+    </div>
+    <ul id="todo-list" aria-label="Task list"></ul>
+  </section>
+
+  <!-- Quick Links Widget -->
+  <section id="quicklinks-widget">
+    <h2>Quick Links</h2>
+    <div id="quicklinks-grid" aria-label="Quick links"></div>
+    <button id="quicklinks-manage" type="button" aria-label="Manage quick links">Manage Links</button>
+  </section>
+
+  </main><!-- end main -->
+
+  <!-- Quick Links Modal -->
+  <div id="quicklinks-modal" class="hidden">
+    <div id="modal-backdrop"></div>
+    <div id="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" type="button" aria-label="Close modal">&#10005;</button>
+      <h2 id="modal-title">Manage Quick Links</h2>
+      <ul id="modal-list" aria-label="Saved quick links"></ul>
+      <div id="modal-add-row">
+        <input id="modal-label-input" type="text" placeholder="Label" aria-label="Link label">
+        <input id="modal-url-input" type="url" placeholder="https://example.com" aria-label="Link URL">
+        <button id="modal-add-btn" type="button" aria-label="Add link">Add</button>
+      </div>
+      <span id="modal-error" role="alert" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

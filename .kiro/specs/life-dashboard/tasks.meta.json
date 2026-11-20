@@ -1,0 +1,360 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Scaffold project structure and HTML skeleton": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175694651
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175703389
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175819382
+      }
+    ],
+    "2.1 Write CSS custom properties and base styles": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175694956
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175823254
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175948234
+      }
+    ],
+    "2.2 Write responsive grid layout": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695124
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175954945
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176129123
+      }
+    ],
+    "2.3 Style individual widgets and interactive states": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695308
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176145797
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176281201
+      }
+    ],
+    "3.1 Write `[CONFIG]`, `[STATE]`, and `[STORAGE]` sections": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695421
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175826886
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175951739
+      }
+    ],
+    "3.2 Implement `[THEME]` section and wire theme toggle": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695511
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175958959
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176133306
+      }
+    ],
+    "4.1 Implement `[GREETING]` pure functions": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695624
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175964229
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176137179
+      }
+    ],
+    "5. Checkpoint — Greeting and theme functional": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695738
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177065798
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177219611
+      }
+    ],
+    "6.1 Implement `[AUDIO]` and `[TIMER]` pure functions": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695846
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176152248
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176286152
+      }
+    ],
+    "6.2 Implement timer stateful functions and wire controls": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175695956
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176295405
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176439864
+      }
+    ],
+    "7.1 Implement `[TODOS]` pure functions and render": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696083
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176299249
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176444843
+      }
+    ],
+    "7.2 Implement CRUD stateful functions and wire controls": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696204
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176455589
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176674848
+      }
+    ],
+    "8. Checkpoint — Timer and To-Do List functional": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696346
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177224211
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177282683
+      }
+    ],
+    "9.1 Implement `[QUICKLINKS]` pure functions and render": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696470
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176461419
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176681152
+      }
+    ],
+    "9.2 Implement modal CRUD and wire controls": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696586
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176689446
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176818865
+      }
+    ],
+    "10.1 Verify initialisation sequence and cross-widget integration": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696692
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176826342
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176913752
+      }
+    ],
+    "10.2 Accessibility and browser-compatibility pass": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696791
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176917897
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177058642
+      }
+    ],
+    "11. Final checkpoint — Full dashboard functional": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795175696897
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177288944
+      },
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177473081
+      }
+    ],
+    "3. Implement the data layer and theme controller in `app.js`": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176133460
+      }
+    ],
+    "4. Implement the Greeting Widget": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176137267
+      }
+    ],
+    "2. Implement the CSS design system and responsive layout": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176281314
+      }
+    ],
+    "6. Implement the Focus Timer": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176440010
+      }
+    ],
+    "7. Implement the To-Do List": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176674958
+      }
+    ],
+    "9. Implement the Quick Links widget and modal": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795176819047
+      }
+    ],
+    "10. Final wiring and polish": [
+      {
+        "executionId": "d18e28b3-0653-4bbb-8243-a091d2dbf6c8",
+        "chatSessionId": "sess_b9d4726d-d300-4af4-a659-365e58c3268c",
+        "timestamp": 1795177058739
+      }
+    ]
+  }
+}

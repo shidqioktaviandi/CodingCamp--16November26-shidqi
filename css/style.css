@@ -1,0 +1,459 @@
+/* Life Dashboard – css/style.css */
+
+/* ============================================================
+   1. CSS Custom Properties (Design Tokens)
+   ============================================================ */
+
+:root[data-theme="light"] {
+  /* Colour palette */
+  --bg:      #f5f5f5;
+  --fg:      #1a1a1a;
+  --surface: #ffffff;
+  --border:  #d0d0d0;
+  --accent:  #4a90d9;
+  --error:   #d93025;
+
+  /* Typography */
+  --font-base:        system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                      Roboto, Helvetica, Arial, sans-serif;
+  --font-size-base:   1rem;
+  --line-height-base: 1.5;
+}
+
+:root[data-theme="dark"] {
+  /* Colour palette */
+  --bg:      #121212;
+  --fg:      #e8e8e8;
+  --surface: #1e1e1e;
+  --border:  #333333;
+  --accent:  #64b0ff;
+  --error:   #ff6b6b;
+
+  /* Typography (same scale, different palette) */
+  --font-base:        system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                      Roboto, Helvetica, Arial, sans-serif;
+  --font-size-base:   1rem;
+  --line-height-base: 1.5;
+}
+
+/* ============================================================
+   2. CSS Reset
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   3. Base Body Styles
+   ============================================================ */
+
+body {
+  font-family:     var(--font-base, system-ui, sans-serif);
+  font-size:       var(--font-size-base, 1rem);
+  line-height:     var(--line-height-base, 1.5);
+  background:      var(--bg);
+  color:           var(--fg);
+  /* Smooth transition for theme switching (Requirements 5.2, NFR-3) */
+  transition:      background 0.3s ease, color 0.3s ease;
+  min-height:      100vh;
+}
+
+/* ============================================================
+   4. No Horizontal Scroll (NFR-2)
+   ============================================================ */
+
+html,
+body {
+  overflow-x: hidden;
+  max-width:  100%;
+}
+
+/* ============================================================
+   5. Fluid Typography (Requirements 6.5, NFR-3)
+   ============================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+
+p,
+li,
+label,
+input,
+button,
+select,
+span {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+/* ============================================================
+   6. Header (Requirements 6.5)
+   ============================================================ */
+
+header {
+  display:         flex;
+  justify-content: flex-end;
+  align-items:     center;
+  padding:         0.75rem 1rem;
+  background:      var(--surface);
+  border-bottom:   1px solid var(--border);
+  max-width:       100%;
+}
+
+/* ============================================================
+   7. Main Grid Layout (Requirements 6.5, NFR-2, NFR-3)
+   ============================================================ */
+
+/*
+ * Body: simple vertical stack — header on top, main below.
+ * The 2 × 2 widget grid is now on <main>, not <body>.
+ */
+
+body {
+  display:        flex;
+  flex-direction: column;
+  gap:            0;
+  padding:        0;
+  align-items:    stretch;
+}
+
+/* Keep the header full-width */
+header {
+  padding: 0.75rem 1rem;             /* re-declare to win specificity */
+}
+
+/* <main> holds the four widgets in a grid */
+main {
+  display:               grid;
+  grid-template-columns: 1fr;             /* mobile-first: single column  */
+  grid-template-rows:    auto;
+  gap:                   1rem;
+  padding:               1rem;
+  align-items:           start;
+}
+
+/* ≥ 900 px: switch to 2 × 2 grid for the four widget sections */
+@media (min-width: 900px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    gap:                   1.5rem;
+    padding:               1.5rem;
+  }
+}
+
+/* ============================================================
+   8. Widget Base Style (Requirements 6.5, NFR-2)
+   ============================================================ */
+
+#greeting-widget,
+#timer-widget,
+#todo-widget,
+#quicklinks-widget {
+  background:   var(--surface);
+  border:       1px solid var(--border);
+  border-radius: 0.75rem;
+  padding:       1.25rem;
+  max-width:     100%;
+  /* Stretch to fill the full grid cell height */
+  align-self:    stretch;
+  /* Smooth theme colour transition */
+  transition:    background 0.3s ease, border-color 0.3s ease;
+}
+
+/* ============================================================
+   9. Greeting Widget (Requirements 1.1, 1.2, 1.3)
+   ============================================================ */
+
+/* Widget section headings: visually small so they don't disrupt
+   the design, but present in the DOM for assistive technology.   */
+#greeting-widget h2,
+#timer-widget h2,
+#todo-widget h2,
+#quicklinks-widget h2 {
+  font-size:      0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color:          var(--fg);
+  opacity:        0.5;
+  font-weight:    600;
+  margin-bottom:  0.5rem;
+}
+
+#greeting-widget #clock-display {
+  font-size:   clamp(2rem, 6vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+#greeting-widget #date-display {
+  font-size:   clamp(0.875rem, 2vw, 1rem);
+  color:       var(--fg);
+  opacity:     0.75;
+  margin-bottom: 0.5rem;
+}
+
+#greeting-widget #greeting-display {
+  font-size:   clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#greeting-widget .name-row {
+  display: flex;
+  gap:     0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   10. Timer Widget (Requirements 2.x)
+   ============================================================ */
+
+#timer-widget {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            1rem;
+}
+
+#timer-display {
+  font-size:   clamp(2.5rem, 8vw, 4rem);
+  font-family: ui-monospace, "Cascadia Code", "Fira Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align:  center;
+  line-height: 1;
+}
+
+#timer-controls {
+  display:         flex;
+  gap:             0.5rem;
+  justify-content: center;
+  flex-wrap:       wrap;
+}
+
+#timer-settings {
+  display:   flex;
+  gap:       1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+#timer-settings label {
+  display:     flex;
+  align-items: center;
+  gap:         0.4rem;
+}
+
+/* ============================================================
+   11. To-Do Widget (Requirements 3.x)
+   ============================================================ */
+
+#todo-widget .todo-input-row {
+  display: flex;
+  gap:     0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#todo-widget .todo-input-row input {
+  flex: 1;
+}
+
+#todo-list {
+  list-style: none;
+  display:    flex;
+  flex-direction: column;
+  gap:        0.4rem;
+}
+
+#todo-list li {
+  display:         flex;
+  align-items:     center;
+  gap:             0.5rem;
+  justify-content: space-between;
+  padding:         0.4rem 0.5rem;
+  border-radius:   0.375rem;
+  background:      var(--bg);
+  border:          1px solid var(--border);
+}
+
+#todo-list li .todo-label-group {
+  display:     flex;
+  align-items: center;
+  gap:         0.5rem;
+  flex:        1;
+  min-width:   0;
+}
+
+#todo-list li label {
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+}
+
+#todo-list li .todo-btn-group {
+  display: flex;
+  gap:     0.25rem;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   12. Quick Links Widget (Requirements 4.x)
+   ============================================================ */
+
+#quicklinks-grid {
+  display:               grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap:                   0.75rem;
+  margin-top:            0.75rem;
+}
+
+#quicklinks-grid a,
+#quicklinks-grid button {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  text-align:      center;
+  padding:         0.6rem 0.5rem;
+  border-radius:   0.5rem;
+  font-size:       clamp(0.8rem, 1.5vw, 0.9rem);
+  word-break:      break-word;
+  text-decoration: none;
+}
+
+/* ============================================================
+   13. Buttons (Requirements 9.1, NFR-3)
+   ============================================================ */
+
+button {
+  cursor:        pointer;
+  padding:       0.45rem 0.9rem;
+  border-radius: 0.375rem;
+  background:    var(--accent);
+  color:         #fff;
+  border:        none;
+  font-size:     inherit;
+  font-family:   inherit;
+  transition:    filter 0.15s ease, background 0.15s ease;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+button:focus-visible {
+  outline:        2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Secondary / icon buttons (delete, edit) */
+button.btn-icon,
+button.btn-secondary {
+  padding:    0.3rem 0.5rem;
+  background: transparent;
+  color:      var(--fg);
+  border:     1px solid var(--border);
+  font-size:  0.85rem;
+}
+
+button.btn-icon:hover,
+button.btn-secondary:hover {
+  background: var(--border);
+  filter:     none;
+}
+
+/* ============================================================
+   14. Inputs and Selects (Requirements 9.1, NFR-3)
+   ============================================================ */
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+select {
+  width:         100%;
+  padding:       0.45rem 0.6rem;
+  border:        1px solid var(--border);
+  border-radius: 0.375rem;
+  background:    var(--surface);
+  color:         var(--fg);
+  font-size:     inherit;
+  font-family:   inherit;
+  transition:    border-color 0.15s ease;
+}
+
+input[type="text"]:focus-visible,
+input[type="number"]:focus-visible,
+input[type="url"]:focus-visible,
+select:focus-visible {
+  outline:        2px solid var(--accent);
+  outline-offset: 0;
+  border-color:   var(--accent);
+}
+
+/* ============================================================
+   15. Modal Overlay (Requirements 4.3, 9.1)
+   ============================================================ */
+
+#quicklinks-modal {
+  position:        fixed;
+  inset:           0;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  z-index:         100;
+}
+
+#quicklinks-modal.hidden {
+  display: none;
+}
+
+#modal-backdrop {
+  position:   absolute;
+  inset:      0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-panel {
+  position:   relative;
+  background: var(--surface);
+  border-radius: 0.75rem;
+  padding:    1.5rem;
+  min-width:  320px;
+  max-width:  90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#modal-panel h2 {
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   16. Completed Task Style (Requirements 3.3)
+   ============================================================ */
+
+span.done {
+  text-decoration: line-through;
+  opacity:         0.6;
+}
+
+/* ============================================================
+   17. Inline Error Spans (Requirements 9.1)
+   ============================================================ */
+
+.error-msg,
+[id$="-error"] {
+  color:       var(--error);
+  font-size:   0.875rem;
+  display:     block;
+  min-height:  1.25em;
+}
